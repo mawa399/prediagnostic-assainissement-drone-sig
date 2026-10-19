@@ -19,7 +19,8 @@
   <a href="#-notation-des-photos">Notation</a> ·
   <a href="#-restitution-dans-le-sig">SIG</a> ·
   <a href="#-résultats">Résultats</a> ·
-  <a href="#-stack-technique">Stack</a>
+  <a href="#-stack-technique">Stack</a> ·
+  <a href="#-évolutions">Évolutions</a>
 </p>
 
 ---
@@ -208,12 +209,14 @@ Les gestionnaires voient en un coup d'œil **quels tronçons curer** et **lesque
 
 ---
 
-## 🚀 Perspectives
+## 🚀 Évolutions
 
-- **Notation assistée par IA** : un modèle de vision entraîné sur les photos déjà notées pour pré-classer les images (sans défaut / charge / défaut).
-- **Exécution planifiée** de l'étape 1 chaque matin (Planificateur de tâches Windows), pour que tout soit prêt à l'arrivée de l'opérateur.
-- **Choix libre du dossier Drive** à traiter depuis l'interface.
-- **Inspection multi-tronçons en continu** sur une même ligne, avec repérage automatique des regards intermédiaires.
+| Statut | Évolution |
+|:-:|---|
+| ✅ **Réalisé** | **Exécution planifiée** de l'étape 1 chaque matin (Planificateur de tâches Windows) : photos récupérées, tronçons exportés et dossier de mission prêts avant l'arrivée de l'opérateur. |
+| ✅ **Réalisé** | **Choix libre du dossier Drive** à traiter depuis l'interface, au lieu de la seule mission de la veille. |
+| 🔄 **En cours de développement** | **Notation assistée par IA** : un modèle de machine learning intégré à la visionneuse, développé avec un stagiaire de l'équipe, et entraîné sur un large volume de photos déjà notées issues des campagnes. Objectif : pré-classer automatiquement les images (sans défaut / charge / défaut) pour que l'opérateur n'ait plus qu'à valider. |
+| 🔭 **À l'étude** | **Inspection multi-tronçons en continu** sur une même ligne, avec repérage automatique des regards intermédiaires. La faisabilité est en cours d'évaluation par les équipes terrain. |
 
 ---
 
