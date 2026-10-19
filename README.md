@@ -27,7 +27,7 @@
 
 Outil de bureau qui automatise **toute la chaîne de traitement des photos d'inspection** prises par un drone dans les réseaux d'assainissement : de la récupération des images sur Google Drive jusqu'à leur **remontée en pièces jointes sur les tronçons dans ArcGIS Enterprise**, avec un tableau de bord de suivi des notes.
 
-Conçu et développé lors de mon alternance puis de mon poste de chargé de projet géomatique chez **Veolia Assainissement & Maintenance France** (Gonesse), l'outil est utilisé en production et distribué sous forme d'**exécutable Windows** à des opérateurs sans compétence en programmation.
+Ce projet a été mon **sujet de mémoire de Master 2** (Master G2M, Université Paris 8), réalisé pendant mon alternance chez **Veolia Assainissement & Maintenance France** (anciennement **SARP**, Société d'Assainissement Rationnel et de Pompage), à Gonesse. Je l'ai ensuite fait évoluer en tant que chargé de projet géomatique. L'outil est utilisé en production et distribué sous forme d'**exécutable Windows** à des opérateurs sans compétence en programmation.
 
 > [!NOTE]
 > Ce dépôt est une **vitrine** du projet : le code source appartient à l'entreprise et n'est pas publié. Vous y trouverez l'architecture, le fonctionnement, des captures de l'interface et des exemples de résultats.
