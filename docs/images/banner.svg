@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#003a66"/>
+      <stop offset="1" stop-color="#0077c8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="260" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="260" rx="18" fill="url(#grid)"/>
+
+  <!-- pipe cross-section motif -->
+  <g transform="translate(1030 130)" fill="none">
+    <circle r="96" stroke="#ffffff" stroke-opacity="0.10" stroke-width="22"/>
+    <circle r="62" stroke="#ffffff" stroke-opacity="0.16" stroke-width="3"/>
+    <circle r="36" stroke="#27ae60" stroke-opacity="0.9" stroke-width="4"/>
+    <circle r="8" fill="#27ae60"/>
+    <path d="M-96 0H-150" stroke="#ffffff" stroke-opacity="0.25" stroke-width="3" stroke-dasharray="6 8"/>
+  </g>
+
+  <text x="60" y="92" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#9fd0f5" letter-spacing="3">ASSAINISSEMENT · DRONE · SIG</text>
+  <text x="60" y="146" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Prédiagnostic des réseaux par drone</text>
+  <text x="60" y="190" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#d6ebfa">Chaîne automatisée de traitement des photos d'inspection et d'intégration SIG</text>
+  <rect x="60" y="214" width="72" height="5" rx="2.5" fill="#27ae60"/>
+</svg>

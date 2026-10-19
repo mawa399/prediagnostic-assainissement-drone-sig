@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#5b7a99"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="430" rx="16" fill="#f4f7fa"/>
+
+  <!-- Lane labels -->
+  <text x="40" y="44" font-size="15" font-weight="700" fill="#005b9d" letter-spacing="2">TERRAIN</text>
+  <text x="1160" y="196" text-anchor="end" font-size="15" font-weight="700" fill="#005b9d" letter-spacing="2">TRAITEMENT · INTERFACE PYQT5</text>
+  <text x="40" y="370" font-size="15" font-weight="700" fill="#005b9d" letter-spacing="2">RESTITUTION</text>
+
+  <!-- Terrain row -->
+  <g font-size="15" fill="#1f2d3d">
+    <rect x="40" y="60" width="250" height="82" rx="10" fill="#fff" stroke="#d6dee8"/>
+    <text x="58" y="92" font-weight="700">Reconnaissance</text>
+    <text x="58" y="116" fill="#5b6b7c">Field Maps · tronçons inspectables</text>
+
+    <rect x="340" y="60" width="250" height="82" rx="10" fill="#fff" stroke="#d6dee8"/>
+    <text x="358" y="92" font-weight="700">Inspection drone</text>
+    <text x="358" y="116" fill="#5b6b7c">1 photo / 10 s · journal de mission</text>
+
+    <rect x="640" y="60" width="250" height="82" rx="10" fill="#fff" stroke="#d6dee8"/>
+    <text x="658" y="92" font-weight="700">Archivage</text>
+    <text x="658" y="116" fill="#5b6b7c">Carte SD → Google Drive (jjmmaaaa)</text>
+  </g>
+  <path d="M290 101H336" stroke="#5b7a99" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M590 101H636" stroke="#5b7a99" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M765 142V160H110V200" stroke="#5b7a99" stroke-width="2" fill="none" marker-end="url(#a)"/>
+
+  <!-- Processing row -->
+  <g font-size="14" fill="#ffffff">
+    <rect x="40"  y="212" width="170" height="104" rx="10" fill="#0077c8"/>
+    <rect x="232" y="212" width="170" height="104" rx="10" fill="#0077c8"/>
+    <rect x="424" y="212" width="170" height="104" rx="10" fill="#7f8c8d"/>
+    <rect x="616" y="212" width="170" height="104" rx="10" fill="#0077c8"/>
+    <rect x="808" y="212" width="170" height="104" rx="10" fill="#0077c8"/>
+    <rect x="1000" y="212" width="160" height="104" rx="10" fill="#27ae60"/>
+
+    <g font-size="12" font-weight="700" fill="#cfe4f5" letter-spacing="1">
+      <text x="56" y="236">ÉTAPE 1</text><text x="248" y="236">ÉTAPE 2</text>
+      <text x="440" y="236">NOTATION</text><text x="632" y="236">ÉTAPE 3</text>
+      <text x="824" y="236">ÉTAPE 4</text><text x="1016" y="236" fill="#d4f5e2">ÉTAPE 5</text>
+    </g>
+    <g font-weight="700">
+      <text x="56" y="262">Récupération</text><text x="56" y="281">&amp; export CSV</text>
+      <text x="248" y="262">Renommage</text><text x="248" y="281">des photos</text>
+      <text x="440" y="262">Visionneuse</text><text x="440" y="281">notes C / P</text>
+      <text x="632" y="262">Tri par note</text><text x="632" y="281">+ output.csv</text>
+      <text x="824" y="262">Table de</text><text x="824" y="281">correspondance</text>
+      <text x="1016" y="262">Remontée</text><text x="1016" y="281">dans le SIG</text>
+    </g>
+    <g font-size="12" fill="#e3f0fa">
+      <text x="56" y="302">API Drive · Portal</text>
+      <text x="248" y="302">id_metier_n°.jpg</text>
+      <text x="440" y="302">C0–C4 · P0–P4</text>
+      <text x="632" y="302">Notation_jjmmaaaa</text>
+      <text x="824" y="302">tronçon ↔ photos</text>
+      <text x="1016" y="302">arcpy · pièces jointes</text>
+    </g>
+  </g>
+  <g stroke="#5b7a99" stroke-width="2" marker-end="url(#a)">
+    <path d="M210 264H228"/><path d="M402 264H420"/><path d="M594 264H612"/>
+    <path d="M786 264H804"/><path d="M978 264H996"/>
+  </g>
+
+  <!-- Restitution -->
+  <path d="M1080 316V350H900" stroke="#5b7a99" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <g font-size="14" fill="#1f2d3d">
+    <rect x="300" y="336" width="290" height="62" rx="10" fill="#fff" stroke="#d6dee8"/>
+    <text x="318" y="362" font-weight="700">Application web cartographique</text>
+    <text x="318" y="384" fill="#5b6b7c">clic sur un tronçon → photos notées</text>
+    <rect x="610" y="336" width="286" height="62" rx="10" fill="#fff" stroke="#d6dee8"/>
+    <text x="628" y="362" font-weight="700">Tableau de bord de suivi</text>
+    <text x="628" y="384" fill="#5b6b7c">notes structurelles et fonctionnelles</text>
+  </g>
+  <path d="M610 367H594" stroke="#5b7a99" stroke-width="2" marker-end="url(#a)"/>
+</svg>
