@@ -59,7 +59,7 @@ Un **drone terrestre autonome** est envoyé dans les canalisations (Ø 200 à 25
 
 | # | Étape | Ce qu'elle fait | Entrées → sorties |
 |:-:|---|---|---|
-| 1 | **Récupération des photos & export attributaire** | Télécharge les photos de la mission de la veille via l'**API Google Drive**, crée le dossier daté de la mission, interroge la couche du **portail ArcGIS Enterprise** et exporte les tronçons inspectés ce jour-là (filtre sur `last_edited_date`). | Drive + Portal → dossier `jjmmaaaa` + CSV des tronçons |
+| 1 | **Récupération des photos & export attributaire** | L'agent choisit la **date de la mission dans un calendrier** intégré à l'interface. L'outil télécharge les photos de cette mission via l'**API Google Drive**, crée le dossier daté, interroge la couche du **portail ArcGIS Enterprise** et exporte les tronçons inspectés ce jour-là (filtre sur `last_edited_date`). | Drive + Portal → dossier `jjmmaaaa` + CSV des tronçons |
 | 2 | **Renommage des photos** | Vérifie que chaque sous-dossier de photos correspond bien à un tronçon du CSV, puis renomme toutes les images selon une convention unique. | Photos brutes → `id_metier_n°.jpg` |
 | — | **Notation (visionneuse)** | L'opérateur note chaque photo : encrassement **C0 à C4**, défauts structurels **P0 à P4**, type de défaut. Outil fourni par une autre agence, intégré et lancé depuis l'interface. | Photos renommées → photos notées |
 | 3 | **Organisation de la notation** | Regroupe les photos notées, les trie par catégorie (sans défaut, défauts de curage, défauts ITV, non notées) et génère le livrable de synthèse. | Photos notées → `Notation_jjmmaaaa/` + `output.csv` |
@@ -105,6 +105,7 @@ Un **drone terrestre autonome** est envoyé dans les canalisations (Ø 200 à 25
 **Pensée pour des opérateurs, pas pour des développeurs :**
 
 - **Un bouton par étape**, dans l'ordre du traitement : aucune ligne de commande.
+- **Calendrier de sélection de la mission** : l'agent choisit la date de la mission à traiter. Le traitement n'est plus limité au lendemain de l'inspection, il peut se faire à tout moment.
 - **Journal en temps réel** : chaque script s'exécute dans un thread séparé (`QThread`) et sa sortie s'affiche au fil de l'eau, l'interface ne se fige jamais.
 - **Barre de progression** pilotée directement par les scripts.
 - **Bouton d'arrêt** pour interrompre proprement un traitement en cours.
@@ -213,10 +214,8 @@ Les gestionnaires voient en un coup d'œil **quels tronçons curer** et **lesque
 
 | Statut | Évolution |
 |:-:|---|
-| ✅ **Réalisé** | **Exécution planifiée** de l'étape 1 chaque matin (Planificateur de tâches Windows) : photos récupérées, tronçons exportés et dossier de mission prêts avant l'arrivée de l'opérateur. |
-| ✅ **Réalisé** | **Choix libre du dossier Drive** à traiter depuis l'interface, au lieu de la seule mission de la veille. |
-| 🔄 **En cours de développement** | **Notation assistée par IA** : un modèle de machine learning intégré à la visionneuse, développé avec un stagiaire de l'équipe, et entraîné sur un large volume de photos déjà notées issues des campagnes. Objectif : pré-classer automatiquement les images (sans défaut / charge / défaut) pour que l'opérateur n'ait plus qu'à valider. |
-| 🔭 **À l'étude** | **Inspection multi-tronçons en continu** sur une même ligne, avec repérage automatique des regards intermédiaires. La faisabilité est en cours d'évaluation par les équipes terrain. |
+| ✅ **Réalisé** | **Visionneuse avec notation assistée par IA** : un modèle de machine learning intégré à la visionneuse, développé avec un stagiaire de l'équipe et entraîné sur un large volume de photos déjà notées issues des campagnes. Il pré-classe automatiquement les images (sans défaut / charge / défaut) et l'opérateur valide. |
+| 🔭 **À l'étude** | **Inspection multi-tronçons en continu** sur une même ligne, avec repérage automatique des regards intermédiaires. La faisabilité relève des équipes terrain. |
 
 ---
 
